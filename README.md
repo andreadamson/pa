@@ -5,3 +5,6 @@
 * github repo - pa
 * vscode remote seadistamine
 * Kursuse põhifailide loomine ja testimine
+
+* [https://github.com/AnnaKarutina/pa_kd19](https://github.com/AnnaKarutina/pa_kd19)
+* [https://web.htk.tlu.ee/digitaru/programmeerimine/part/sissejuhatus/](https://web.htk.tlu.ee/digitaru/programmeerimine/part/sissejuhatus/)
