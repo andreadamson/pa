@@ -1,29 +1,27 @@
-//andmetüübid
+// logid konsoolile
 
-//täisarvud
-console.log(10);
-console.log(-4);
-console.log(0);
+// logid
+console.log('123');
 
-// realarvud - ujuvkomaarvud
-console.log(2.5);
-console.log(-7.23);
-console.log(-2.0);
+// tabel
 
-// sõned - tekst
+console.table({a : 1, b : 2 });
 
-console.log('hello world!');
+// veateade
 
-// tõeväärtused
+console.error('VIGA');
 
-console.log(true); //tõene
-console.log(false); //väär
+// märkused
+console.warn('see on märkus');
 
-// nimekirjad
+// ajakulu kontroll
+console.time('test');
+    console.log('mingi tegevus');
+    console.log('mingi tegevus');
+    console.log('mingi tegevus');
+    console.log('mingi tegevus');
+    console.log('mingi tegevus');
+console.timeEnd('test');
 
-console.log([1, 2, 3, 4]);
-
-// objektid
-
-console.log({a : 1, b : 2 });
-console.table({a : 1, b : 2 })
+//kustutamine
+console.clear();
