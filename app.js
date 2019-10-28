@@ -1,48 +1,97 @@
-// muutujad
+// Tingimuslaused
 
-// var
+// if tingimuslause
 
-var nimi = 'Andre';
-console.log(nimi);
+let pin = 1234;
 
-nimi = 'katrin'
-console.log(nimi)
+if ( pin == 1234) {
+    console.log("Parool õige!");
+}
 
-// muutujate initsialiseerimine
+// else
 
-var tervitus;
-console.log(tervitus);
-tervitus = 'Tere';
-console.log(tervitus);
+else {
+    console.log("Parool vale!")
+}
 
-// liitnimetused muutujatele
+// arvude võrdlemine
 
-var eesNimi = "Andre"; // camel style 
-var ees_nimi = "Andre"; // PHP style
-var EesNimi = "Andre"; //Pascal style
-var eesnimi = "Andre";
+let arv = 10
 
-// let
+if ( arv < 15) {
+    console.log("arv on väiksem kui 15 ");
+} else {
+    console.log("arv on suurem kui 15");
+}
 
-let pereNimi = "Adamson";
-console.log(pereNimi);
-pereNimi = "?"
+//tingimuslause tingimuslause sees
 
-// const
-const minuEesNimi = "Andre";
-console.log(minuEesNimi);
-// minuEesnimi = "yeet";
+let parool = 1234;
+let kontoSeis = 100;
 
-//const näide
+if ( parool == 1234) {
+    console.log("Parool õige!");
+        console.log("Sisenesid pangaautomaati! Pangakontol on " + kontoSeis + " eurot.");
+        console.log("sisesta, mitu eurot soovid välja võtta:");
 
-const inimene = [{ nimi : 'Andre', vanus : 20 }];
-console.table(inimene);
-inimene.vanus = 21;
-console.table(inimene);
+        let soovitudRaha = 30;
 
-//naide 2
+        if ( soovitudRaha <= kontoSeis) {
+            kontoSeis = kontoSeis - soovitudRaha;
+            console.log("Palun võtke raha")
+        }else {
+            console.log("kontol ei ole piisavalt raha!")
+        }
 
-const arvud = [1,2,3,4,5];
-console.log(arvud);
-arvud.push(6);
-console.log(arvud);
+        console.log("Teie kontol on järel: " + kontoSeis + " eurot.");
+}else {
+    console.log("Parool vale!")
+}
+
+// Mitmeosaline tingimus. loogilised tehted ja avaldised
+
+// AND tehe &&
+
+let kood1 = 1234
+let kood2 = 0000
+
+console.log("Sisesta 1. parool:")
+ const pakutudKood1 = 1234
+console.log("sisesta 2. parool:")
+const pakutudKood2 = 0000
+
+if (pakutudKood1 == kood1 && pakutudKood2 == kood2) {
+    console.log("seif avaneb!");
+} else {
+    console.log("Paroolid ei ühti proovi uuesti!");
+}
+
+// OR tehe || (ainult 1 koodidest peab olema õige)
+
+let kood3 = 1234;
+let kood4 = 0000;
+
+console.log("Sisesta 3. parool:")
+ const pakutudKood3 = 1234
+console.log("sisesta 4. parool:")
+const pakutudKood4 = 0000
+
+if (pakutudKood3 == kood3 || pakutudKood4 == kood4) {
+    console.log("seif avaneb!");
+} else {
+    console.log("Paroolid ei ühti proovi uuesti!");
+}
+
+// NOT tehe ! (MUUDAB TÕESE TEHTE VASTUPIDISEKS)
+
+// else if
+
+let punktid = 88;
+
+if (punktid > 90) {
+    console.log("Hinne A");
+} else if (punktid < 80) {
+    console.log("Hinne ei ole A ega B");
+} else {
+    console.log("Hinne ei ole A");
+}
