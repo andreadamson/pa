@@ -95,3 +95,24 @@ if (punktid > 90) {
 } else {
     console.log("Hinne ei ole A");
 }
+
+// suvaline arv Mündivise
+
+// Mündivise
+
+console.log("Kas kull(1) või kiri(2)?")
+
+let kasutajaValik = "1"
+let random = (Math.floor(Math.random() * 2));
+
+if ( random == 1) {
+    console.log("Kull!");
+} else {
+    console.log("Kiri!")
+}
+
+if (kasutajaValik == random) {
+    console.log("Arvasid õigesti!")
+}else{
+    console.log("Arvasid valesti!")
+}
