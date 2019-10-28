@@ -117,6 +117,22 @@ if (kasutajaValik == random) {
     console.log("Arvasid valesti!")
 }
 
+//TSÜKLID
+
+//FOR tsükkel
+//Üldtsükkel
+
+let arv1;
+
+for (arv1 = 1; arv1 <= 10; arv1++)
+ if(arv1 < 10) {
+    console.log("arv =" + arv1)
+ } else {
+    console.log("arv =" + arv1)
+ }
+    
+
+
 //WHILE-tsükkel
 
 let i = 0;
