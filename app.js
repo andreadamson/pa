@@ -116,3 +116,12 @@ if (kasutajaValik == random) {
 }else{
     console.log("Arvasid valesti!")
 }
+
+//WHILE-tsükkel
+
+let i = 0;
+while ( i < 5) {
+    console.log("tere!");
+    i++;
+    console.log(i)
+}
