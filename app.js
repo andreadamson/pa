@@ -1,24 +1,14 @@
 // Funktsioonid
-// arvu paarisuse kontroll
-// funktsiooni defineerimine
+// Funktsioon, mis arvutab ristküliku pindala ja väljastab ekraanil
 
-function paarisuseKontroll(arv){
-  // tulemuslause defineerimine
-  let lause;
-  // arvutame jääk 2-ga jagamisel
-  let jaak = arv % 2;
-  // kui jaak on võrdne nulliga
-  if( jaak === 0 ){
-    // tegu on paaris arvuga
-    lause =  arv + ' on paaris';
-  } else {
-    // tegu on paaritu arvuga
-    lause =  arv + ' on paaritu';
-  }
-  // tagastame antud väärtuse
-  return lause;
+function ristkylikuPindala(pikkus, laius){
+  // väljastame väärtused
+  console.log('Pikkus = ' + pikkus);
+  console.log('Laius = ' + laius);
+  // arvutame pindala
+  let pindala = pikkus * laius;
+  // väljastame pindala
+  console.log('Pindala = ' + pindala);
 }
-// funktsiooni kasutamine
-let paarsus;
-paarsus = paarisuseKontroll(4);
-console.log(paarsus);
+
+ristkylikuPindala(15, 5);
