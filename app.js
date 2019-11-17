@@ -1,15 +1,13 @@
-//tsükklid
-
+// Funktsioonid
+// arvu paarsuse kontroll
+// suvaline täisarv
 let arv = 5;
-let jagaja = 2;
-
-while( arv % jagaja != 0) {
-    jagaja++;
-    console.log(arv % jagaja)
-}
-
-if (arv == jagaja) {
-    console.log(arv + " arv on algarv")
-} else {
-    console.log(arv + " arv ei ole algarv")
+// arvutame jääk 2-ga jagamisel
+let jaak = arv % 2;
+// kui jääk on võrdne nulliga
+if( jaak === 0 ){
+//paaris arv
+console.log(arv + ' on paaris');
+//paaritu arvu
+console.log(arv + ' on paaritu');
 }
