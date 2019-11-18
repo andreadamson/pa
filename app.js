@@ -18,7 +18,16 @@ liElement.textContent = 'Uus element';
 
 //loome lingi
 
-const link = 
+const link = document.createElement('a');
+
+link.className = 'delete-item secondary-content';
+
+link.innerHTML = '<i ci class="fa fa-remove"><i>';
 
 
-console.log(liElement);
+//lisame lingi listi elemendi sisse
+
+liElement.appendChild(link);
+
+
+console.log(link);
